@@ -123,3 +123,5 @@ pkunlp/feature/
 pkunlp/feature/*.feat
 data/
 *.bin
+*.train
+oridata/
