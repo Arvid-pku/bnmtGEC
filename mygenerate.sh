@@ -1,6 +1,8 @@
 # TODO
 # bert-model-name will change
-python bertnmt/generate.py bertnmt/data/  \
+
+DATAPATH=bertnmt/data/char/
+python bertnmt/generate.py $DATAPATH  \
     --path checkpoints/checkpoint_best.pt \
     --bert-model-name bert-base-chinese \
     --gen-subset test \

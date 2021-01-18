@@ -2,7 +2,7 @@ src=src
 tgt=tgt
 bedropout=0.5
 ARCH=transformer
-DATAPATH=bertnmt/data
+DATAPATH=bertnmt/data/char
 SAVEDIR=checkpoints
 mkdir -p $SAVEDIR
 

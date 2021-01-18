@@ -125,3 +125,5 @@ data/
 *.bin
 *.train
 oridata/
+.src
+.tgt
