@@ -70,8 +70,8 @@ def write_data(data, file_path):
 if __name__ == "__main__":
     
     method = "pkunlp"
-    input_file = "../bertnmt/result/re.txt"
-    output_file = "../bertnmt/result/re-%s.txt" % method
+    input_file = "../../result/re.txt"
+    output_file = "../../result/re-%s.txt" % method
 
     src_data, pred_data = get_src_pred(read_data(input_file))
     seg_data = [" ".join(cut_sentence(x, method)) for x in pred_data]

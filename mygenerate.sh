@@ -9,9 +9,9 @@ python bertnmt/generate.py bertnmt/data/  \
     --max-len-b 100  \
     --remove-bpe > result/re.txt
 
-cd ../pkunlp/
+cd requirement/pkunlp/
 python reform.py
-cd ../bertnmt/
+cd ../../
 cd m2scorer/scripts/
 source activate m2s
 python m2scorer.py
