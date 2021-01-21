@@ -2,8 +2,9 @@
 # bert-model-name will change
 
 DATAPATH=bertnmt/data/char/
-python bertnmt/generate.py $DATAPATH  \
-    --path checkpoints/checkpoint_best.pt \
+CHECK=checkpoints/char/checkpoint_best.pt
+CUDA_VISIBLE_DEVICES=3 python bertnmt/generate.py $DATAPATH  \
+    --path $CHECK \
     --bert-model-name bert-base-chinese \
     --gen-subset test \
     --beam 12  \
