@@ -95,7 +95,6 @@ def load_tf_weights_in_bert(model, tf_checkpoint_path):
                         print("Skipping {}".format("/".join(name)))
                         print(l[0])
                         continue
-            # my change
             elif l[0] == 'output_bias' or l[0] == 'beta':
                 try:
                     pointer = getattr(pointer, 'bias')
@@ -586,8 +585,7 @@ class BertPreTrainedModel(nn.Module):
         kwargs.pop('state_dict', None)
         cache_dir = kwargs.get('cache_dir', None)
         kwargs.pop('cache_dir', None)
-        # from_tf = kwargs.get('from_tf', False)
-        # my change
+        #from_tf = kwargs.get('from_tf', False)
         from_tf = True
         kwargs.pop('from_tf', None)
 
